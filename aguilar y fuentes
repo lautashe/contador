@@ -1,0 +1,125 @@
+de gpiozero import LED
+
+desde el botón de importación gpiozero
+
+desde el momento de importar el sueño
+
+ 
+
+A = LED (14) # 1 0 1 0 1 0 1 0 1 0
+
+B = LED (15) # 0 1 1 0 0 1 1 0 0 0
+
+C = LED (17) # 0 0 0 1 1 1 1 0 0 0
+
+D = LED (18) # 0 0 0 0 0 0 0 1 1 0
+
+button = Botón (2)
+
+presione = 0
+
+mientras presiona <= 10:
+
+    si presiona == 10: presione = 0
+
+    si presiona == 0: 
+
+        A.off ()
+
+        B.off ()
+
+        C.off ()
+
+        Quitarse()
+
+    elif presione == 1:
+
+        A. en ()
+
+        B.off ()
+
+        C.off ()
+
+        Quitarse()
+
+    elif presione == 2:
+
+        A.off ()
+
+        B. en ()
+
+        C.off ()
+
+        Quitarse()
+
+    elif presione == 3:
+
+        A. en ()
+
+        B. en ()
+
+        C.off ()
+
+        Quitarse()
+
+    elif presione == 4:
+
+        A.off ()
+
+        B.off ()
+
+        Estafa()
+
+        Quitarse()
+
+    elif presione == 5:  
+
+        A. en ()
+
+        B.off ()
+
+        Estafa()
+
+        Quitarse()
+
+    elif presione == 6:
+
+        A.off ()
+
+        B. en ()
+
+        Estafa()
+
+        Quitarse()
+
+    elif presione == 7:
+
+        A. en ()
+
+        B. en ()
+
+        Estafa()
+
+        Quitarse()
+
+    elif presione == 8:
+
+        A.off ()
+
+        B.off ()
+
+        C.off ()
+
+        Don()
+
+    más: A. en ()
+
+        B.off ()
+
+        C.off ()
+
+        Don()   
+
+    button.wait_for_press ()
+
+    presionar = presionar + 1
